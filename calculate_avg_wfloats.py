@@ -28,3 +28,12 @@ def calculate_avg(numbers: Iterable) -> float:
         return 0.0
     total = math.fsum(nums)
     return total / len(nums)
+
+if __name__ == "__main__":
+    sample_numbers = [10, 20, 30, 40, 50]
+    average = calculate_avg(sample_numbers)
+    print(f"The average of {sample_numbers} is {average}")
+
+    sample_floats = [10.2, 20.2, 30.2, 40.2, 50.2]
+    average = calculate_avg(sample_floats)
+    print(f"The average of {sample_floats} is {average}")
